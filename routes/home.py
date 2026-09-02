@@ -5,4 +5,5 @@ home_bp = Blueprint("home", __name__)
 
 @home_bp.route("/")
 def hello_world():
+    """Render the home page."""
     return render_template("pages/index.html")

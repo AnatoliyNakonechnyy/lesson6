@@ -5,6 +5,7 @@ users_bp = Blueprint("users", __name__, url_prefix="/users")
 
 @users_bp.route("/<string:username>")
 def show_user_profile(username):
+    """Render the user profile page."""
     return render_template(
         "components/user_profile.html",
         user={
